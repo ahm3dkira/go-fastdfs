@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM  registry.cn-hangzhou.aliyuncs.com/prince/alpine-golang:1.17 as builder
+FROM --platform=$BUILDPLATFORM  --platform=linux/arm64 golang:1.17-alpine as builder
 MAINTAINER s_jqzhang <s_jqzhang@163.com>
 ARG VERSION=1.1.7
 RUN set -xe; \
